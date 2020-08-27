@@ -1,0 +1,284 @@
+/* navbar */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1b072b;
+}
+
+.log {
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a {
+  color: #fefefe;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .carousel-inner>.item>img {
+    line-height: 1;
+    z-index: 1;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #1b072b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1000
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Description portion */
+
+  
+.work-feature-block-image {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.carousel-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+
+/* main */
+body {
+    background-image: url("dark-purple.jpg");
+    background-size: cover;
+}
+
+.columns {
+    text-align: center;
+}
+
+body {
+    color: #fefefe;
+}
+
+h2 {
+  color: #fefefe;
+}
+
+h4 {
+  color: #fefefe;
+}
+
+
+
+/* Testimonials */
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  margin-top: 5%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: rgb(90, 2, 172);
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #ffffff;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #4bd3f5;
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.team .team_member p.role{
+  color: rgb(255, 255, 255);
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.team_member {
+  border-radius: 50%;
+}
+
+
+#container {
+  width: 25%;
+  height: 500px;
+}
+
+td {
+  color: white;
+}
+
+th {
+  color: white;
+}
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#search-req {
+  color: white;
+}

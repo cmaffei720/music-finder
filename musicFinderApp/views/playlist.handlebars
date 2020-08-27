@@ -1,0 +1,37 @@
+<div class = "container">
+    <div class="row">
+        <div class="col">
+            <div class="container playlist-cols">
+                <h2>Your Playlist</h2>
+                <ul>
+                {{#each songName}}
+                    {{#unless this.deleted}}
+                    <li class = "li-item">
+                        <br>
+                    <button type="submit" class="btn delete-btn" data-id={{this.id}}>Delete {{this.songName}}</button> 
+                    </li>  
+                    {{/if}}
+                {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col">
+        <div class="container playlist-cols">
+            <h2>Deleted Songs</h2>
+            <ul>
+                {{#each burger}}
+                    {{#if this.deleted}}
+                        <li class="li-item deleted-item">
+                            <button type="submit" class="btn add-btn" data-id={{this.id}}>Delete {{this.songName}}</button>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+  </div>

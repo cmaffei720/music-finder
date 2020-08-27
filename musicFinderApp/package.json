@@ -1,0 +1,26 @@
+{
+  "name": "musicfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvrivas854/musicFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvrivas854/musicFinder/issues"
+  },
+  "homepage": "https://github.com/kvrivas854/musicFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql2": "^2.1.0",
+    "request": "^2.88.2",
+    "sequelize": "^6.3.4"
+  }
+}

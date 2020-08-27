@@ -1,0 +1,330 @@
+/* main */
+body {
+    background-image: url("dark-purple.jpg");
+    background-size: cover;
+}
+
+.columns {
+    text-align: center;
+}
+
+body {
+    color: #fefefe;
+}
+
+h2 {
+  color: #fefefe;
+}
+
+h4 {
+  color: #fefefe;
+}
+
+.form-group{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+/* styling connect with me buttons in contact page */
+.wrapper{
+    text-align: center;
+}
+
+.btn-link{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #3498bd;
+    color: #8a3cb8;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-link i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+    box-shadow: 0 5px 15px -5px #7f25bb;
+}
+
+.btn-link:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn-link::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #5e279c;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn-link:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top:-30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* send button style */
+.btn{
+    background: #3498bd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    margin-right: 10px;
+}
+
+
+/* navbar */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b072b;
+  }
+  
+  .log {
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  
+  .nav-links a {
+    color: #fefefe;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    body{
+      overflow-x: hidden;
+    }
+  
+    .carousel-inner>.item>img {
+      line-height: 1;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #1b072b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      z-index: 1000
+    }
+  
+    .nav-links li {
+      opacity: 0;
+    }
+  
+    .burger{
+      display: block;
+    }
+  }
+  
+  .nav-active{
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  /* Description portion */
+  
+    
+  .work-feature-block-image {
+      display: block;
+      margin: auto;
+      padding: 10px 0;
+  }
+  
+  .carousel-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  
+  }
+  
+  img {
+      width: 20%;
+      height: 20%;
+  }
+  
+  
+  /* main */
+  body {
+      background-image: url("dark-purple.jpg");
+      background-size: cover;
+  }
+  
+  .columns {
+      text-align: center;
+  }
+  
+  body {
+      color: #fefefe;
+  }
+  
+  h2 {
+    color: #fefefe;
+  }
+  
+  h4 {
+    color: #fefefe;
+  }
+  
+  
+  
+  /* Testimonials */
+  
+  @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper{
+    margin-top: 10%;
+  }
+  
+  .wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .team{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .team .team_member{
+    background: rgb(90, 2, 172);
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #ffffff;  
+    position: relative;
+  }
+  
+  .team .team_member h3{
+    color: #4bd3f5;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  
+  .team .team_member p.role{
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .team_member {
+    border-radius: 50%;
+  }

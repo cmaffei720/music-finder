@@ -1,0 +1,17 @@
+<div class = "container">
+    <div class="row">
+        <div class="col">
+            <div class="container songs-cols">
+                <h2>Songs Results</h2>
+                <ul>
+                {{#each song}}
+                    <li class = "li-item">
+                        <br>
+                    <button type="submit" class="btn add-btn" data-id={{this.id}}>Add {{this.songsName}}</button> 
+                    </li>
+                {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
